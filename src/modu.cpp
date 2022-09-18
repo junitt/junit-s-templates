@@ -33,7 +33,7 @@ struct modint
 	modint operator/=(const modint &a){return *this=*this/a;}
 	bool operator==(const modint &a)const{return v==a.v;}
 }one(1);
-modint fac[111110],ifac[111110];
+modint fac[111110],ifac[111110];//注意更改这里的大小大于组合数的最大值 
 modint C(int n,int m)
 {
 	return fac[n]*ifac[m]*ifac[n-m];
